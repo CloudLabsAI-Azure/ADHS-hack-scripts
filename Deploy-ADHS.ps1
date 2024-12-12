@@ -1,6 +1,6 @@
 # Function to download the Bicep file
 Function Download-BicepFile {
-    $bicepUrl = "https://jupyterlabscontent.blob.core.windows.net/adhs/deployment.bicep"  # Replace with actual URL or local path
+    $bicepUrl = "https://raw.githubusercontent.com/CloudLabsAI-Azure/ADHS-hack-scripts/refs/heads/main/adhs-deployments.bicep"  # Replace with actual URL or local path
     $localPath = "deployment.bicep"
     Invoke-WebRequest -Uri $bicepUrl -OutFile $localPath -ErrorAction Stop
     Write-Host "Bicep file downloaded to $localPath"
